@@ -6,7 +6,7 @@ e retorne um valor booleano informando se o elemento x está contido no array */
 
 import java.util.Scanner;
 
-public class u00ExerciciosIniciais1 {
+public class u00bExerciciosIniciais1 {
     public static void main(String[] args) {
 
         Scanner sc1 = new Scanner(System.in);

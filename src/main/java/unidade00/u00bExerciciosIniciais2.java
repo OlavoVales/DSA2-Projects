@@ -1,5 +1,5 @@
 package unidade00;
 
-public class u00ExerciciosIniciais2 {
+public class u00bExerciciosIniciais2 {
     
 }
