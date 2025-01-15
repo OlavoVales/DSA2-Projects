@@ -11,10 +11,12 @@ public class u00bExerciciosIniciais1 {
 
         Scanner sc1 = new Scanner(System.in);
 
+        int[] arrayDeNumeros = {10, 2, 23, 34, 5};
+
         System.out.println("Digite o numero que deseja saber se esta contido ou nao no array: ");
         int numeroDigitado = sc1.nextInt();
 
-        if (verificaPresencaNumero(numeroDigitado)){
+        if (verificaPresencaNumero(numeroDigitado, arrayDeNumeros)){
             System.out.println("o numero digitado " + numeroDigitado + " está contido no array");
         } else {
             System.out.println("o numero digitado " + numeroDigitado + " NÃO está contido no array");
@@ -23,8 +25,7 @@ public class u00bExerciciosIniciais1 {
         sc1.close();
     }
 
-    static boolean verificaPresencaNumero(int numeroDigitado) {
-        int arrayDeNumeros[] = {10, 2, 23, 34, 5};
+    static boolean verificaPresencaNumero(int numeroDigitado, int[] arrayDeNumeros) {
         int quantidadeElementosArray = arrayDeNumeros.length;
 
         for (int i = 0; i < quantidadeElementosArray; i++) {
