@@ -65,25 +65,16 @@ public class u00bExerciciosIniciais5{
         return (c >= 'a' && c <= 'z') ? ((char)(c - 32)) : c;
     }
 
+    static boolean isLetra(char caractere) {
+        return (caractere >= 'A' && caractere <= 'Z' || caractere >= 'a' && caractere <= 'z');
+    }
+
     static boolean isVogal(char caractere) {
         caractere = toUpper(caractere);
         return (caractere == 'A' || caractere == 'E' || caractere == 'I' || caractere == 'O' || caractere == 'U') && isLetra(caractere);
     }
 
-    static boolean isLetra(char caractere) {
-        return (caractere >= 'A' && caractere <= 'Z' || caractere >= 'a' && caractere <= 'z');
-    }
-
     static boolean isConsoante(char caractere){
-
-        return !isVogal(caractere) && isLetra(caractere);
-
-        /*
-        if(isVogal(letra)){
-            return false;
-        }
-
-        return true;
-         */
+        return !isVogal(caractere);
     }
 }
