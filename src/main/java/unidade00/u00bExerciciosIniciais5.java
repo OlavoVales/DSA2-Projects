@@ -59,6 +59,8 @@ public class u00bExerciciosIniciais5{
         }else{
             System.out.print("a letra " + caractere + " eh uma letra e vogal");
         }
+
+        sc1.close();
     }
 
     static char toUpper(char c) {
